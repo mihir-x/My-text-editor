@@ -1,5 +1,4 @@
 const size = parseInt(captureInput('font-size').value);
-console.log(size);
 const text = captureInput('textarea');
 text.style.fontSize = `${size}px`;
 const colorOriginal = captureInput('color').value;

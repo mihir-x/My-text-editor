@@ -24,3 +24,14 @@ document.getElementById('right').addEventListener('click', function(){
 document.getElementById('justify').addEventListener('click', function(){
     captureInput('textarea').style.textAlign = 'justify';
 });
+
+document.getElementById('text-format').addEventListener('click', function(){
+    const textString = captureInput('textarea').value;
+    const splitText = textString.split('.');
+    let newText = '';
+    for(let i of splitText){
+        const newI = makeFirstLetterCapital(i);
+        newText = newText + newI +'. ';
+    }
+    captureInput('textarea').value = newText;
+});
