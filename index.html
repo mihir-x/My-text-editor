@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b08442d712.js" crossorigin="anonymous"></script>
     <title>Text Editor</title>
 </head>
 <body class="bg-blue-400">
     <header class="text-center mt-10">
         <h1 class="text-5xl font-bold">My Personal Text Editor</h1>
     </header>
-    <main class="w-3/4 mx-auto bg-blue-200">
-        
+    <main class="w-3/4 mx-auto bg-blue-300 border-4 border-black mt-8 h-[calc(100vh-10rem)]">
+        <section class="mx-auto w-[calc(100%-3rem)] flex flex-col md:flex-row justify-between border-b-2 mb-4 border-black py-4">
+            <div class="space-x-4">
+                <button id="bold"><i class="fa-solid fa-bold"></i></button>
+                <button id="italic"><i class="fa-solid fa-italic"></i></button>
+                <button id="uppercase"><i class="fa-solid fa-underline"></i></button>
+            </div>
+            <div class="space-x-4">
+                <button id="left"><i class="fa-solid fa-align-left"></i></button>
+                <button id="center"><i class="fa-solid fa-align-center"></i></button>
+                <button id="right"><i class="fa-solid fa-align-right"></i></button>
+                <button id="justify"><i class="fa-solid fa-align-justify"></i></button>
+            </div>
+            <div class="space-x-4">
+                <input type="number" name="" id="" value="17" class="w-12 p-1 bg-inherit font-bold">
+                <button id="normalcase" class="font-bold">aA</button>
+                <input type="color" name="" id="">
+            </div>
+        </section>
+        <section class="mx-auto w-[calc(100%-3rem)] h-3/4 ">
+            <textarea name="" id="" cols="" rows="" class="w-full h-full"></textarea>
+        </section>
     </main>
 </body>
 </html>
